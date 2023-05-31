@@ -1,4 +1,5 @@
-```markdown
+
+
 # Aplicativo de Buscar Filmes
 
 Este é um aplicativo móvel simples que permite buscar filmes usando a API do TVMaze.
@@ -58,5 +59,3 @@ O aplicativo usa a API do TVMaze para buscar filmes. Certifique-se de ter uma co
 ## Licença
 
 Este projeto está licenciado sob a Licença [MIT](https://opensource.org/licenses/MIT).
-```
- 
