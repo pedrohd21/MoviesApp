@@ -8,7 +8,7 @@ Este é um aplicativo móvel simples que permite buscar filmes usando a API do T
 
 - Input de busca para inserir o nome do filme desejado.
 - Botão de busca para enviar a solicitação à API.
-- Exibição dos resultados da busca em uma lista.
+- Exibição dos resultados da busca em uma lista, mostrando o título, imagem e gênero de cada filme.
 
 ## Pré-requisitos
 
