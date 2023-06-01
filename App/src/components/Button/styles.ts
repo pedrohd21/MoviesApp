@@ -15,7 +15,6 @@ export const Container = styled(TouchableOpacity)`
 `;
 
 export const Title = styled.Text`
-
   font-size: 20px;
   color: #fffdfd;
 
