@@ -32,6 +32,12 @@ export function Filme(){
   
   return(
     <Container>
+      <FlatList
+        data={show}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (<Card title={item.name} genres={item.genres} image={item.image.medium} />)}
+      />
+      
       <Input 
         placeholder="Buscar Series"
         value={search}
@@ -43,11 +49,7 @@ export function Filme(){
         onPress={handleBusca}
       />
     
-      <FlatList
-        data={show}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => (<Card title={item.name} genres={item.genres} image={item.image.medium} />)}
-      />
+      
     </Container>
   );
 };

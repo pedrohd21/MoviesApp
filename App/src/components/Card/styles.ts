@@ -1,17 +1,20 @@
-import styled from "styled-components/native";
+import styled, { css } from "styled-components/native";
 
 export const Container = styled.View`
   width: 100%;
   height: 250px;
-  border-radius: 6px;
   padding: 12px;
   margin-top: 12px;
-  background-color: #212121;
+  margin-bottom: -40px;
+  background-color: ${({ theme }) => theme.COLORS.GRAY_900};
 `;
 
 export const Title = styled.Text`
-  font-size: 18px;
-  color: #FF9800;
+  ${({ theme }) => css`
+    font-size: ${theme.FONT_SIZE.MD}px;
+    color: ${theme.COLORS.GREEN};
+    font-family: ${theme.FONT_FAMILY.BOLD};
+  `};
   margin-bottom: 8px;
 `;
 
@@ -21,9 +24,11 @@ export const GenrerContainer = styled.View`
 `;
 
 export const Genres = styled.Text`
-  font-size: 16px;
-  color: #FFB66E;
-
+  ${({ theme }) => css`
+    font-size: ${theme.FONT_SIZE.SM}px;
+    color: ${theme.COLORS.GREEN_DARK};
+    font-family: ${theme.FONT_FAMILY.BOLD};
+  `};
 `;
 
 export const Image = styled.Image`
