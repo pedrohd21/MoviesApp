@@ -4,7 +4,7 @@ import { Container } from "./styles";
 export function Input({...rest}: TextInputProps){
   return (
     <Container
-    placeholderTextColor={"#007A55"}
+    placeholderTextColor={"#FF9800"}
       {...rest}
     />
   );

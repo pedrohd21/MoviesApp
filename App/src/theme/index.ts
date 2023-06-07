@@ -43,11 +43,13 @@ export default {
     TEAL_DARK: '#00685B', // Tonalidade de verde-azulado mais escura
     TEAL_LIGHT: '#4FD1BB', // Tonalidade de verde-azulado mais clara
 
-    GRAY_900: '#212121', // Tonalidade de cinza mais escura
-    GRAY_700: '#424242', // Tonalidade de cinza média
-    GRAY_500: '#757575', // Tonalidade de cinza padrão
-    GRAY_300: '#BDBDBD', // Tonalidade de cinza mais clara
-    GRAY_100: '#F5F5F5' // Tonalidade de cinza muito clara
+    GRAY_900: '#080808',  // Tonalidade de cinza mais escura
+    GRAY_800: '#121212',  // Tonalidade de cinza mais escura
+    GRAY_700: '#1B1B1B',  // Tonalidade de cinza escura
+    GRAY_600: '#242424',  // Tonalidade de cinza
+    GRAY_500: '#2E2E2E',  // Tonalidade de cinza
+    GRAY_400: '#373737',  // Tonalidade de cinza
+    GRAY_300: '#414141',  // Tonalidade de cinza
   },
   FONT_FAMILY: {
     REGULAR: 'Roboto_400Regular', // Fonte regular

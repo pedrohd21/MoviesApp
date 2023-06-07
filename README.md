@@ -55,6 +55,8 @@ O aplicativo usa a API do TVMaze para buscar filmes. Certifique-se de ter uma co
 - [React Native](https://reactnative.dev/)
 - [Axios](https://github.com/axios/axios)
 - [Styled Components](https://styled-components.com/)
+- [Safe Area](https://reactnative.dev/docs/safeareaview)
+- [bottom-tab-navigation](https://reactnavigation.org/docs/bottom-tab-navigator)
 
 ## Licença
 

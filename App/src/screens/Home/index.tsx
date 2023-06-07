@@ -3,9 +3,8 @@ import { Input } from "../../components/Input";
 import { Card } from "../../components/Card";
 import React, { useState } from 'react'
 import { Container } from "./styles"
-import { FlatList, Image } from 'react-native';
+import { FlatList } from 'react-native';
 import axios from 'axios';
-import { ImageSourcePropType  } from "react-native";
 
 interface Show {
   id: number;
@@ -17,7 +16,7 @@ interface Show {
   };
 }
 
-export function Filme(){
+export function Home(){
   const [search, setSearch] = useState('');
   const [show, setShow] = useState<Show[]>([]);
   
