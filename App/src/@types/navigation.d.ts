@@ -4,6 +4,7 @@ export declare global {
       Home: undefined;
       Busca: undefined;
       Info: undefined;
+      Favorites: undefined;
     }
   }
 }

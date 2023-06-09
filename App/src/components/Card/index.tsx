@@ -1,4 +1,6 @@
 import { Container, Title, Genres, GenrerContainer, Image, ContainerTitle, Summary} from "./styles";
+import { TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 type Props = {
   title: string;
@@ -9,25 +11,34 @@ type Props = {
 
 export function Card({title, genres, image, summary}: Props){
   const strippedSummary = summary.replace(/(<([^>]+)>)/gi, '');
-  return(
-    <Container>
-        <Image source={{ uri: image }} />
+  const navigation = useNavigation();
 
-        <ContainerTitle>
-          <Title>
-            {title}
-          </Title>
-          <GenrerContainer>
-            <Genres>
-              Gênero: 
-            {genres.join(" | ")}
-            </Genres>
-          </GenrerContainer>
-          <Summary>
-            {strippedSummary}
-          </Summary>
-        </ContainerTitle>
-  
-    </Container>
+  const handlePress = () => {
+    navigation.navigate('Info');
+  };
+
+  return(
+    <TouchableOpacity onPress={handlePress}>
+      <Container>
+          <Image source={{ uri: image }} />
+
+          <ContainerTitle>
+            <Title>
+              {title}
+            </Title>
+            <GenrerContainer>
+              <Genres>
+                Gênero: 
+              {genres.join(" | ")}
+              </Genres>
+            </GenrerContainer>
+            <Summary>
+              {strippedSummary}
+            </Summary>
+          </ContainerTitle>
+    
+      </Container>
+    </TouchableOpacity>
+    
   )
 }

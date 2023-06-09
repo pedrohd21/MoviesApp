@@ -34,13 +34,6 @@ export function MyTabs() {
         
     }}
     >
-      <Tab.Screen name="Busca" component={Search} 
-        options={{
-          tabBarIcon: ({ color }) => (
-            <Icon  name="search" size={16} color={color} />
-          ),
-        }}
-      />
       <Tab.Screen name="Home" component={Home} 
         options={{
           tabBarIcon: ({ color }) => (
@@ -48,7 +41,13 @@ export function MyTabs() {
           ),
         }}
       />
-      
+      <Tab.Screen name="Busca" component={Search} 
+        options={{
+          tabBarIcon: ({ color }) => (
+            <Icon  name="search" size={16} color={color} />
+          ),
+        }}
+      />
       <Tab.Screen name="Favorito" component={Favorite} 
         options={{
           tabBarIcon: ({ color }) => (
@@ -56,7 +55,6 @@ export function MyTabs() {
           ),
         }}
       />
-
     </Tab.Navigator>
   );
 }
