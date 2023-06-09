@@ -4,21 +4,17 @@ import { TextInput } from 'react-native';
 export const Container = styled(TextInput)`
   flex: 1;
 
-  min-height: 56px;
-  max-height: 56px;
-
+  min-height: 35px;
+  max-height: 35px;
+  padding-left: 10px;
+  margin-left: 15px;
 
   background-color: ${({ theme }) => theme.COLORS.GRAY_900};
   color: ${({ theme }) => theme.COLORS.ORANGE};
 
-  
-  font-size: 20px;
+  font-size: ${({ theme }) => theme.FONT_SIZE.SM}px;
 
-
-  border-radius: 6px;
+  border-radius: 20px;
   border-width: 1px;
   border-color: ${({ theme }) => theme.COLORS.ORANGE};
-  padding: 16px;
-  margin-top: 30px;
-  margin-bottom: 16px;
 `;
