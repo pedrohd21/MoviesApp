@@ -1,9 +1,11 @@
 
 
-```
 # Aplicativo de Buscar Filmes
 
-Este é um aplicativo móvel simples que permite buscar filmes usando a API de filmes.
+Este é um aplicativo móvel simples que permite buscar filmes usando a
+
+figma
+https://www.figma.com/file/8VmiixK7Q4LMhUI3fBJR3V/App-Filmes(FilmScout)?type=design&node-id=0-1&t=GIWpHzZwGnfDIDpm-0
 
 ## Funcionalidades
 
@@ -60,7 +62,7 @@ O aplicativo usa a API do TVMaze para buscar filmes. Certifique-se de ter uma co
 - [bottom-tab-navigation](https://reactnavigation.org/docs/bottom-tab-navigator)
 - [stack-navigation](https://reactnavigation.org/docs/stack-navigator)
 
+
 ## Licença
 
 Este projeto está licenciado sob a Licença [MIT](https://opensource.org/licenses/MIT).
-```
