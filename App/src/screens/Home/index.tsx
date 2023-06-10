@@ -4,7 +4,7 @@ import { Container } from "./styles"
 
 import React, { useState, useEffect  } from 'react'
 
-import { FlatList, TouchableOpacity } from 'react-native';
+import { FlatList } from 'react-native';
 import axios from 'axios';
 
 
@@ -39,7 +39,7 @@ export function Home(){
         <FlatList
           data={show}
           keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => (<Card title={item.name} genres={item.genres} image={item.image.medium} summary={item.summary} />)}
+          renderItem={({ item }) => (<Card title={item.name} genres={item.genres} image={item.image.medium} summary={item.summary} id={item.id} />)}
         />
     </Container>
   );

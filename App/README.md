@@ -4,8 +4,7 @@
 
 Este é um aplicativo móvel simples que permite buscar filmes usando a
 
-figma
-https://www.figma.com/file/8VmiixK7Q4LMhUI3fBJR3V/App-Filmes(FilmScout)?type=design&node-id=0-1&t=GIWpHzZwGnfDIDpm-0
+- [Figma](https://www.figma.com/file/8VmiixK7Q4LMhUI3fBJR3V/App-Filmes(FilmScout)?type=design&node-id=0-1&t=GIWpHzZwGnfDIDpm-0)
 
 ## Funcionalidades
 

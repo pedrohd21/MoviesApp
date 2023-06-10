@@ -17,7 +17,8 @@ export const BackButton = styled.TouchableOpacity`
 export const BackIcon = styled(Icon).attrs(({ theme }) => ({
   size: 25,
   color: theme.COLORS.ORANGE,
-}))``;
+}))`
+`;
 
 export const Title = styled.Text`
  ${({ theme }) => css`
@@ -26,6 +27,6 @@ export const Title = styled.Text`
     font-family: ${theme.FONT_FAMILY.BOLD};
   `};
   text-align: left;
-  flex: 1;
+  flex:1;
   padding-left: 10px;
 `;

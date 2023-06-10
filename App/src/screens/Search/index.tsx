@@ -15,6 +15,7 @@ interface Show {
   name: string;
   genres: string[];
   summary: string;
+  
   image: {
     medium: string;
     original: string;
@@ -43,10 +44,10 @@ export function Search(){
   
   return(
     <Container >
-        <Header showBackButton={true} title="Busca"/>
+        <Header showBackButton={true} title="Search"/>
         <ContainerBusca>
           <Input 
-            placeholder="Buscar Series"
+            placeholder="Search"
             value={search}
             onChangeText={setSearch}
           />
@@ -58,7 +59,7 @@ export function Search(){
         <FlatList
           data={show}
           keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => (<Card title={item.name} genres={item.genres} image={item.image.medium} summary={item.summary}/>)}
+          renderItem={({ item }) => (<Card title={item.name} genres={item.genres} image={item.image.medium} summary={item.summary} id={item.id} />)}
         />
     </Container>
   );

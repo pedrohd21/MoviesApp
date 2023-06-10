@@ -7,14 +7,16 @@ type Props = {
   genres: string[];
   summary: string;
   image: string;
+  id: number;
 }
 
-export function Card({title, genres, image, summary}: Props){
+export function Card({title, genres, image, summary, id}: Props){
   const strippedSummary = summary.replace(/(<([^>]+)>)/gi, '');
   const navigation = useNavigation();
 
   const handlePress = () => {
-    navigation.navigate('Info');
+    navigation.navigate('Info',{ id: id });
+
   };
 
   return(
@@ -28,7 +30,7 @@ export function Card({title, genres, image, summary}: Props){
             </Title>
             <GenrerContainer>
               <Genres>
-                Gênero: 
+                Genres: 
               {genres.join(" | ")}
               </Genres>
             </GenrerContainer>

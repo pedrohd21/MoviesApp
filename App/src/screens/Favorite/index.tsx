@@ -4,7 +4,7 @@ import { Container } from "./styles";
 export function Favorite(){
   return (
     <Container>
-      <Header showBackButton={true} title="Salvos"/>
+      <Header showBackButton={true} title="Favorite"/>
     </Container>
   );
 };

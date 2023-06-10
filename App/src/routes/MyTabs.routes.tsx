@@ -41,14 +41,14 @@ export function MyTabs() {
           ),
         }}
       />
-      <Tab.Screen name="Busca" component={Search} 
+      <Tab.Screen name="Search" component={Search} 
         options={{
           tabBarIcon: ({ color }) => (
             <Icon  name="search" size={16} color={color} />
           ),
         }}
       />
-      <Tab.Screen name="Favorito" component={Favorite} 
+      <Tab.Screen name="Favorite" component={Favorite} 
         options={{
           tabBarIcon: ({ color }) => (
             <Icon  name="bookmark" size={16} color={color} />
