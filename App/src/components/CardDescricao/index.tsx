@@ -1,4 +1,5 @@
-import { Container, Title, Genres, Image, Status, Summary} from "./styles";
+import { ButtonIcon } from "../ButtonIcon";
+import { Container, Title, Genres, Image, Status, Summary, ContainerImg} from "./styles";
 
 
 type Props = {
@@ -16,13 +17,19 @@ export function CardDescricao({title, genres, image, summary, id, status}: Props
 
   return(
       <Container>
-        <Image source={{ uri: image }} />
+        <ContainerImg>
+          <ButtonIcon 
+            icon="bookmark"
+            tamanho={30}
+          />
+          
+        </ContainerImg>
+          <Image source={{ uri: image }} />
           <Title>
             {title}
           </Title>
            <Genres>
-              Genres: 
-              {genres.join(" | ")}
+              Genres: {genres.join(" | ")}
             </Genres>
             <Status>
               Status: {status}

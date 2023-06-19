@@ -53,6 +53,8 @@ export function Search(){
           />
         
           <ButtonIcon
+            icon="search"
+            tamanho={20}
             onPress={handleBusca}
           />
         </ContainerBusca>

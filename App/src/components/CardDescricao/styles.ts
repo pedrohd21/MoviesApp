@@ -9,6 +9,12 @@ export const Container = styled.View`
 
 `;
 
+export const ContainerImg = styled.View`
+  position: absolute;
+  top: 12px;
+  left: 6px;
+`;
+
 
 
 export const Title = styled.Text`

@@ -60,6 +60,7 @@ O aplicativo usa a API do TVMaze para buscar filmes. Certifique-se de ter uma co
 - [Safe Area](https://reactnative.dev/docs/safeareaview)
 - [bottom-tab-navigation](https://reactnavigation.org/docs/bottom-tab-navigator)
 - [stack-navigation](https://reactnavigation.org/docs/stack-navigator)
+- [storage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
 
 
 ## Licença

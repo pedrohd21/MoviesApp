@@ -30,8 +30,7 @@ export function Card({title, genres, image, summary, id}: Props){
             </Title>
             <GenrerContainer>
               <Genres>
-                Genres: 
-              {genres.join(" | ")}
+                Genres: {genres.join(" | ")}
               </Genres>
             </GenrerContainer>
             <Summary>
