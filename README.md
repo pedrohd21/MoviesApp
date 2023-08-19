@@ -32,7 +32,7 @@ Este é um aplicativo móvel simples que permite buscar filmes usando a API do T
 3. Instale as dependências:
 
    ```
-   npm install
+   npx npm install
    ```
 
 ## Configuração da API
