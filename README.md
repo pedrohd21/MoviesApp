@@ -4,6 +4,18 @@
 
 Este é um aplicativo móvel simples que permite buscar filmes usando a API do TVMaze.
 
+## Home
+![image](https://github.com/pedrohd21/MoviesApp/assets/67549131/4da55524-0024-4eee-9cf6-358a421b3f99)
+
+## Descrição
+![image](https://github.com/pedrohd21/MoviesApp/assets/67549131/0d881088-0a54-4c96-bf74-f7c98a6cab60)
+
+## Busca
+![image](https://github.com/pedrohd21/MoviesApp/assets/67549131/f004fd8f-b4c1-4327-8601-7480d1c3fc31)
+
+
+
+
 ## Funcionalidades
 
 - Input de busca para inserir o nome do filme desejado.
