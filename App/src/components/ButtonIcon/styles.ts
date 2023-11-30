@@ -10,13 +10,14 @@ export const Container = styled(TouchableOpacity)`
   justify-content: center;
   align-items: center;
   
-
   border-width: 1px;
   border-radius: 10px;
-  border-color: ${({ theme}) => theme.COLORS.ORANGE};
+  border-color: ${({ theme }) => theme.COLORS.ORANGE};
+  background-color: ${({ theme }) => theme.COLORS.GRAY_900};
 `;
 
-export const IconButton = styled(Icon).attrs(({ theme }) => ({
-  // size: 20,
+export const IconButton = styled(Icon).attrs(({ theme, salvo }) => ({
+  // size: 37,
   color: theme.COLORS.ORANGE,
+
 }))``;

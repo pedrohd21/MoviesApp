@@ -2,7 +2,7 @@ import { Card } from "../../components/Card";
 import { Header } from "../../components/Header";
 import { Container } from "./styles"
 
-import React, { useState, useEffect  } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { FlatList } from 'react-native';
 import axios from 'axios';
@@ -18,9 +18,9 @@ interface Show {
   };
 }
 
-export function Home(){
+export function Home() {
   const [show, setShow] = useState<Show[]>([]);
-  
+
   useEffect(() => {
     async function fetchShows() {
       try {
@@ -33,14 +33,14 @@ export function Home(){
 
     fetchShows();
   }, []);
-  return(
+  return (
     <Container>
-      <Header showBackButton={false} title="FilmScout"/>
-        <FlatList
-          data={show}
-          keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => (<Card title={item.name} genres={item.genres} image={item.image.medium} summary={item.summary} id={item.id} />)}
-        />
+      <Header showBackButton={false} title="FilmScout" />
+      <FlatList
+        data={show}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (<Card title={item.name} genres={item.genres} image={item.image.medium} summary={item.summary} id={item.id} />)}
+      />
     </Container>
   );
 };

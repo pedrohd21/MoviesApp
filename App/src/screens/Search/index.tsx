@@ -15,21 +15,21 @@ interface Show {
   name: string;
   genres: string[];
   summary: string;
-  
+
   image: {
     medium: string;
     original: string;
   };
 }
 
-export function Search(){
+export function Search() {
   const [search, setSearch] = useState('');
   const [show, setShow] = useState<Show[]>([]);
   const FlatListRef = useRef<FlatList>(null);
 
-  async function handleBusca(){
+  async function handleBusca() {
     try {
-      if(search.trim() === '') {
+      if (search.trim() === '') {
         alert('Digite algo para fazer a busca.')
         return
       }
@@ -41,28 +41,28 @@ export function Search(){
       console.error(error);
     }
   }
-  
-  return(
+
+  return (
     <Container >
-        <Header showBackButton={true} title="Search"/>
-        <ContainerBusca>
-          <Input 
-            placeholder="Search"
-            value={search}
-            onChangeText={setSearch}
-          />
-        
-          <ButtonIcon
-            icon="search"
-            tamanho={20}
-            onPress={handleBusca}
-          />
-        </ContainerBusca>
-        <FlatList
-          data={show}
-          keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => (<Card title={item.name} genres={item.genres} image={item.image.medium} summary={item.summary} id={item.id} />)}
+      <Header showBackButton={true} title="Search" />
+      <ContainerBusca>
+        <Input
+          placeholder="Search"
+          value={search}
+          onChangeText={setSearch}
         />
+
+        <ButtonIcon
+          icon="search"
+          tamanho={20}
+          onPress={handleBusca}
+        />
+      </ContainerBusca>
+      <FlatList
+        data={show}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (<Card title={item.name} genres={item.genres} image={item.image.medium} summary={item.summary} id={item.id} />)}
+      />
     </Container>
   );
 };

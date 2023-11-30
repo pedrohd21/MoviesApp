@@ -1,5 +1,5 @@
 import { ButtonIcon } from "../ButtonIcon";
-import { Container, Title, Genres, Image, Status, Summary, ContainerImg} from "./styles";
+import { Container, Title, Genres, Image, Status, Summary, ContainerImg } from "./styles";
 
 
 type Props = {
@@ -12,33 +12,29 @@ type Props = {
 
 }
 
-export function CardDescricao({title, genres, image, summary, id, status}: Props){
+export function CardDescricao({ title, genres, image, summary, id, status }: Props) {
   const strippedSummary = summary.replace(/(<([^>]+)>)/gi, '');
 
-  return(
-      <Container>
-        <ContainerImg>
-          <ButtonIcon 
-            icon="bookmark"
-            tamanho={30}
-          />
-          
-        </ContainerImg>
-          <Image source={{ uri: image }} />
-          <Title>
-            {title}
-          </Title>
-           <Genres>
-              Genres: {genres.join(" | ")}
-            </Genres>
-            <Status>
-              Status: {status}
-            </Status>
+  return (
+    <Container>
+      <ContainerImg>
 
-          <Summary>
+      </ContainerImg>
+      <Image source={{ uri: image }} />
+      <Title>
+        {title}
+      </Title>
+      <Genres>
+        Genres: {genres.join(" | ")}
+      </Genres>
+      <Status>
+        Status: {status}
+      </Status>
 
-            Description: {strippedSummary}
-          </Summary>
-      </Container>
+      <Summary>
+
+        Description: {strippedSummary}
+      </Summary>
+    </Container>
   )
 }

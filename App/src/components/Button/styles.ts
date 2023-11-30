@@ -6,7 +6,7 @@ export const Container = styled(TouchableOpacity)`
   min-height: 56px;
   max-height: 56px;
 
-  background-color: ${({ theme}) => theme.COLORS.ORANGE}; 
+  background-color: ${({ theme }) => theme.COLORS.ORANGE}; 
 
   border-radius: 6px;
 

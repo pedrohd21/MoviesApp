@@ -11,12 +11,12 @@ export function MyStack() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-      
-      screenOptions={{
-        headerShown: false,
-        animationEnabled: false,
-        
-      }}
+
+        screenOptions={{
+          headerShown: false,
+          animationEnabled: false,
+
+        }}
       >
         <Stack.Screen name="MyTabs" component={MyTabs} />
         <Stack.Screen name="Info" component={Info} />

@@ -1,7 +1,5 @@
 import { Home } from '../screens/Home';
-import { Favorite } from '../screens/Favorite';
 import { Search } from '../screens/Search';
-
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -22,36 +20,29 @@ const styles = StyleSheet.create({
 });
 
 export function MyTabs() {
-  
+
   return (
-    <Tab.Navigator 
+    <Tab.Navigator
       screenOptions={{
         headerShown: false,
         tabBarStyle: styles.tabBarStyle,
         tabBarLabelStyle: styles.tabBarLabelStyle,
         tabBarActiveTintColor: '#FF9800',
         tabBarInactiveTintColor: '#B26C00',
-        
-    }}
+
+      }}
     >
-      <Tab.Screen name="Home" component={Home} 
+      <Tab.Screen name="Home" component={Home}
         options={{
           tabBarIcon: ({ color }) => (
-            <Icon  name="home" size={16} color={color} />
+            <Icon name="home" size={16} color={color} />
           ),
         }}
       />
-      <Tab.Screen name="Search" component={Search} 
+      <Tab.Screen name="Search" component={Search}
         options={{
           tabBarIcon: ({ color }) => (
-            <Icon  name="search" size={16} color={color} />
-          ),
-        }}
-      />
-      <Tab.Screen name="Favorite" component={Favorite} 
-        options={{
-          tabBarIcon: ({ color }) => (
-            <Icon  name="bookmark" size={16} color={color} />
+            <Icon name="search" size={16} color={color} />
           ),
         }}
       />

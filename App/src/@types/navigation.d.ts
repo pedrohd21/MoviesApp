@@ -6,7 +6,6 @@ export declare global {
       Info: {
         id: number;
       };
-      Favorites: undefined;
     }
   }
 }
